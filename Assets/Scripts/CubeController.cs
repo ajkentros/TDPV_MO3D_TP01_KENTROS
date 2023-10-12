@@ -34,13 +34,13 @@ public class CubeController : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.RightArrow))
         {
             Rotate();
-            cubeBehaviour.RotationSpeed = cubeBehaviour.RotationSpeedInitial;
+            cubeBehaviour.RotationSpeed = -cubeBehaviour.RotationSpeedInitial;
         }
         
         if (Input.GetKeyDown(KeyCode.LeftArrow))
         {
             Rotate();
-            cubeBehaviour.RotationSpeed = -cubeBehaviour.RotationSpeedInitial;
+            cubeBehaviour.RotationSpeed = cubeBehaviour.RotationSpeedInitial;
         }
         
         if (Input.GetKeyDown(KeyCode.Space))
