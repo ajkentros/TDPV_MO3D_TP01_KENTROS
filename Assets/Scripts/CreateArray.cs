@@ -17,7 +17,7 @@ public class CreateArray : MonoBehaviour
             for (int x = 0; x < N; x++)
             {
                 // calcular la posición del bloque toamndo la posición de x e y 
-                Vector3 position = new Vector3(x * blockPrefab.transform.localScale.x, y * blockPrefab.transform.localScale.y, 0f);
+                Vector3 position = new(x * blockPrefab.transform.localScale.x, y * blockPrefab.transform.localScale.y, 0f);
 
                 // instancia el bloque en la posición calculada
                 GameObject block = Instantiate(blockPrefab, position, Quaternion.identity);

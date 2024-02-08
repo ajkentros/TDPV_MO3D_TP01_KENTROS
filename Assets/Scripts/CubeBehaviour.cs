@@ -38,13 +38,13 @@ public class CubeBehaviour : MonoBehaviour
         switch (rotationAxis)
         {
             case Axis.x:
-                transform.Rotate(RotationSpeed * Vector3.right * Time.deltaTime);
+                transform.Rotate(RotationSpeed * Time.deltaTime * Vector3.right);
                 break;
             case Axis.y:
-                transform.Rotate(RotationSpeed * Vector3.up * Time.deltaTime);
+                transform.Rotate(RotationSpeed * Time.deltaTime * Vector3.up);
                 break;
             case Axis.z:
-                transform.Rotate(RotationSpeed * Vector3.forward * Time.deltaTime);
+                transform.Rotate(RotationSpeed * Time.deltaTime * Vector3.forward);
                 break;
         }
     }
